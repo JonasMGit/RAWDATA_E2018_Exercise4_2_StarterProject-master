@@ -8,17 +8,6 @@
 <body>
     <h2>Posts</h2>
 
-    Firstname: <input data-bind="textInput : firstName" />
-    Lastname: <input data-bind="textInput: lastName" />
-    <div>
-        Fullname: <span data-bind="text: fullName"></span>
-    </div>
-
-    <div>
-        Firstname: <span data-bind="text: firstName"></span>
-
-    </div>
-
 
     Posts:
     <table>
@@ -26,17 +15,20 @@
             <tr>
                 <th>Link</th>
                 <th>Title</th>
-                
+
                 <th></th>
             </tr>
         </thead>
         <tbody data-bind="foreach: posts">
             <tr>
-               <td data-bind="text: link"></td>
-                <td data-bind="text: title"></td>  
+                <td data-bind="text: link"></td>
+                <td data-bind="text: title"></td>
+
             </tr>
         </tbody>
     </table>
+    <button data-bind="click: nextPosts">Next</button>
+
 
     <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
 

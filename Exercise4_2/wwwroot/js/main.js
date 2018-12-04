@@ -4,7 +4,6 @@
         jquery: "lib/jQuery/dist/jquery.min",
         knockout: "lib/knockout/dist/knockout.debug",
         text: "lib/text/text",
-        dataService: "DataAccessLayer/DataService.cs"
     }
 });
 

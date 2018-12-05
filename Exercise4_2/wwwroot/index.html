@@ -27,7 +27,10 @@
             </tr>
         </tbody>
     </table>
-    <button data-bind="click: nextPosts">Next</button>
+    <button data-bind="click: prevPosts, enable: hasPrev">Prev</button>
+
+    <button data-bind="click: nextPosts, enable: hasNext">Next</button>
+
 
 
     <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
